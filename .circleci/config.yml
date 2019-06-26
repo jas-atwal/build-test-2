@@ -29,9 +29,3 @@ jobs:
       - run:
           name: Unzip Helium
           command: mv helium-python-2.0.3-linux.zip?dl=0 helium-python-2.0.3-linux.zip && unzip helium-python-2.0.3-linux.zip
-      - run:
-          name: Set Path for Helium
-          command: echo 'export PYTHONPATH="/helium-python-2.0.3/heliumlib:$PYTHONPATH"' >> ~/.bashrc
-       - run:
-          name: Run Python - Helium
-          command: python
