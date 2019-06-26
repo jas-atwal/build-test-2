@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/tmp
+    docker:
+      - image: selenium/standalone-chrome:3.1.0
+    steps:
+      - checkout
+      - run: 
+      - run: 
