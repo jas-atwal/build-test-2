@@ -13,6 +13,5 @@ jobs:
             echo 'Does this look familiar?'
             echo 'This is the delivery pipeline
       - run:
-          name: Install Hugo!
-          command: |
-            ./ci-install-hugo.sh
+          name: Install Hugo
+          command: ./ci-install-hugo.sh
