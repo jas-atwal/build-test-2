@@ -24,9 +24,6 @@ jobs:
           name: Check Hugo
           command: hugo version
       - run:
-          name: Install Python
-          command: sudo apt install -y python3-minimal
-      - run:
           name: Download Helium
           command: wget https://www.dropbox.com/s/nx12d36ohc9il6k/helium-python-2.0.3-linux.zip?dl=0
       - run:
@@ -35,4 +32,6 @@ jobs:
       - run:
           name: Set Path for Helium
           command: echo 'export PYTHONPATH="/helium-python-2.0.3/heliumlib:$PYTHONPATH"' >> ~/.bashrc
-
+      - run:
+          name: Install Python
+          command: sudo apt install -y python3-minimal
