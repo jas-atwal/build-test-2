@@ -28,4 +28,4 @@ jobs:
           command: wget https://www.dropbox.com/s/nx12d36ohc9il6k/helium-python-2.0.3-linux.zip?dl=0
       - run:
           name: Unzip Helium
-          command: mv helium-python-2.0.3-linux.zip?dl=0 helium-python-2.0.3-linux.zip && unzup helium-python-2.0.3-linux.zip
+          command: mv helium-python-2.0.3-linux.zip?dl=0 helium-python-2.0.3-linux.zip && unzip helium-python-2.0.3-linux.zip
