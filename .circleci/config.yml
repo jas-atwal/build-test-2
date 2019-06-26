@@ -12,5 +12,8 @@ jobs:
             echo 'Does this look familiar?'
             echo 'This is the delivery pipeline'
       - run:
-          name: Install Helium
+          name: Update
           command: sudo apt-get update
+      - run:
+          name: Download Hugo
+          command: wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_amd64.deb
