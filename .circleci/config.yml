@@ -11,3 +11,6 @@ jobs:
             ls -l
             echo 'Does this look familiar?'
             echo 'This is the delivery pipeline'
+      - run:
+          name: Install Helium
+          command: sudo apt-get update && sudo apt-get install helium
