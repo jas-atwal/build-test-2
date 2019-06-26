@@ -20,9 +20,12 @@ jobs:
       - run:
           name: Install Hugo
           command: sudo dpkg -i hugo*.deb && hugo version
+       - run:
+          name: Check Hugo
+          command: hugo version
       - run:
           name: Install Python
-          command: sudo apt install -y python3-minimal && python --version
+          command: sudo apt install -y python3-minimal
       - run:
           name: Download Helium
           command: wget https://www.dropbox.com/s/nx12d36ohc9il6k/helium-python-2.0.3-linux.zip?dl=0
