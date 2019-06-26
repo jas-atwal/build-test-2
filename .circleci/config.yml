@@ -4,7 +4,15 @@ jobs:
     working_directory: ~/tmp
     docker:
       - image: selenium/standalone-chrome:3.1.0
+      - environment:
+        HUGO_VERSION: 0.46.1
     steps:
       - checkout
-      - run: 
-      - run: 
+      - run:
+          name: Code Has Arrived
+          command: |
+            ls -al
+            echo '^^^That should look familiar^^^'
+      - run:
+          name: Install Hugo
+          command: ./ci-install-hugo.sh 
