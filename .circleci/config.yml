@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Install Hugo
           command: sudo dpkg -i hugo*.deb
-       - run:
+      - run:
           name: Check Hugo
           command: hugo version
       - run:
@@ -32,3 +32,6 @@ jobs:
       - run:
           name: Set Path for Helium
           command: echo 'export PYTHONPATH="/helium-python-2.0.3/heliumlib:$PYTHONPATH"' >> ~/.bashrc
+      - run:
+          name: Install python
+          command: sudo apt-get install -y python
