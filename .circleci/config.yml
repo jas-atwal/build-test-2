@@ -19,10 +19,10 @@ jobs:
           command: wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_amd64.deb
       - run:
           name: Install Hugo
-          command: sudo dpkg -i hugo*.deb
+          command: sudo dpkg -i hugo*.deb && hugo version
       - run:
-          name: Check Hugo
-          command: hugo version
+          name: Install Python
+          command: sudo apt install -y python3-minimal && python --version
       - run:
           name: Download Helium
           command: wget https://www.dropbox.com/s/nx12d36ohc9il6k/helium-python-2.0.3-linux.zip?dl=0
@@ -32,6 +32,4 @@ jobs:
       - run:
           name: Set Path for Helium
           command: echo 'export PYTHONPATH="/helium-python-2.0.3/heliumlib:$PYTHONPATH"' >> ~/.bashrc
-      - run:
-          name: Install Python
-          command: sudo apt install -y python3-minimal
+
