@@ -1,10 +1,11 @@
+
 version: 2
 jobs:
   build:
     docker:
-      - image: selenium/standalone-chrome:3.1.0
-      - environment:
-        HUGO_VERSION: 0.46.1
-    steps:
-      - checkout
-
+      - image: circleci/golang:latest
+        environment:
+          HUGO_VERSION: 0.51
+          S3DEPLOY_VERSION: 2.2.0
+  steps:
+     - checkout
