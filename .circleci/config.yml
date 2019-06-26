@@ -1,11 +1,12 @@
 
-version: 2
+version: 2.0
 jobs:
   build:
     docker:
-      - image: circleci/golang:latest
-        environment:
-          HUGO_VERSION: 0.51
-          S3DEPLOY_VERSION: 2.2.0
-  steps:
-     - checkout
+      - image: alpine:3.7
+    steps:
+      - run:
+          name: The First Step
+          command: |
+            echo 'Hello World!'
+            echo 'This is the delivery pipeline
