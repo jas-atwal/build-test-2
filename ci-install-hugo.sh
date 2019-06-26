@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
 
 HUGO_DOWNLOAD=hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
 
