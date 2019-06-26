@@ -11,6 +11,7 @@ jobs:
             ls -l
             echo 'Does this look familiar?'
             echo 'This is the delivery pipeline'
+            python --version
       - run:
           name: Update
           command: sudo apt-get update
