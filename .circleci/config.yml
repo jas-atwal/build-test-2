@@ -11,7 +11,6 @@ jobs:
             ls -l
             echo 'Does this look familiar?'
             echo 'This is the delivery pipeline'
-            python --version
       - run:
           name: Update
           command: sudo apt-get update
@@ -33,3 +32,6 @@ jobs:
       - run:
           name: Set Path for Helium
           command: echo 'export PYTHONPATH="/helium-python-2.0.3/heliumlib:$PYTHONPATH"' >> ~/.bashrc
+      - run:
+          name: Install Python
+          command: sudo apt install python3-minimal
