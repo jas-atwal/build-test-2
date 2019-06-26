@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/tmp
     docker:
-      - image: selenium/standalone-chrome:3.1.0
+      - image: selenium/standalone-chrome:3.141.59-radium #selenium/standalone-chrome:3.1.0
       - environment:
         HUGO_VERSION: 0.46.1
     steps:
