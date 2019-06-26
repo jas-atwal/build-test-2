@@ -2,7 +2,16 @@ version: 2
 jobs:
   build:
     docker:
-      - image: selenium/standalone-chrome:3.141.59-radium #selenium/standalone-chrome:3.1.0
+      - image: selenium/standalone-chrome:3.1.0
       - environment:
         HUGO_VERSION: 0.46.1
-
+    steps:
+      - checkout
+      - run:
+          name: Code Has Arrived
+          command: |
+            ls -al
+            echo '^^^That should look familiar^^^'
+      - run:
+          name: Install Hugo
+          command: ./ci-install-hugo.sh
