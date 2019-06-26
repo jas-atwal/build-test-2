@@ -35,3 +35,6 @@ jobs:
       - run:
           name: Install python
           command: sudo apt-get install -y python
+      - run:
+          name: Python version
+          command: python --version
