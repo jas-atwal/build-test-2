@@ -28,4 +28,4 @@ jobs:
           command: wget https://www.dropbox.com/s/nx12d36ohc9il6k/helium-python-2.0.3-linux.zip?dl=0
       - run:
           name: Install Helium
-          command: sudo unzip helium-python-2.0.3-linux.zip && ls -l
+          command: mv helium-python-2.0.3-linux.zip?dl=0 helium-python-2.0.3-linux.zip && ls -l
