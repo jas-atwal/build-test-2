@@ -24,5 +24,8 @@ jobs:
           name: Check Hugo
           command: hugo version
       - run:
-          name: Download Hugo
+          name: Download Helium
           command: wget https://www.dropbox.com/s/nx12d36ohc9il6k/helium-python-2.0.3-linux.zip?dl=0
+      - run:
+          name: Install Helium
+          command: sudo unzip helium-python-2.0.3-linux.zip && ls -l
