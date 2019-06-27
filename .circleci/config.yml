@@ -32,3 +32,6 @@ jobs:
       - run:
           name: Set Path for Helium
           command: echo 'export PYTHONPATH="/helium-python-2.0.3/heliumlib:$PYTHONPATH"' >> ~/.bashrc
+      - run:
+          name: Run Hugo
+          command: hugo server -D
