@@ -19,7 +19,7 @@ jobs:
           command: wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_amd64.deb
       - run:
           name: Install Hugo
-          command: sudo dpkg -i hugo*.deb  && hugo version
+          command: sudo dpkg -i hugo*.deb  && hugo version && ls -l
       - run:
           name: Install python
           command: sudo apt-get install -y python && python --version
