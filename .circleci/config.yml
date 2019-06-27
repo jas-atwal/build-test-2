@@ -39,8 +39,5 @@ jobs:
           name: Exit hugo service
           command: exit
       - run:
-          name: Change dir for test
-          command: cd test/ && pwd
-      - run:
-          name: Run Test
-          command: sudo ./run.sh
+          name: Change dir and run test
+          command: cd test/ && pwd && sudo ./run.sh
