@@ -2,7 +2,7 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: alpeware/chrome-headless-trunk
+      - image: selenium/standalone-chrome:3.1.0
     steps:
       - checkout
       - run:
