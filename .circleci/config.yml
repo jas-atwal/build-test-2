@@ -40,4 +40,4 @@ jobs:
           command: exit
       - run:
           name: Button UI test
-          command: cd/test/ && pwd && ./run.sh
+          command: cd test/ && pwd && ./run.sh
