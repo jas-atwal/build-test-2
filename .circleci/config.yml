@@ -35,7 +35,6 @@ jobs:
       - run:
           name: Run Hugo
           command: hugo server --watch --renderToDisk &
-          command: exit
       - run:
           name: Exit hugo service
           command: exit
