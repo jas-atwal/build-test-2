@@ -37,5 +37,8 @@ jobs:
           command: hugo server --watch --renderToDisk &
           command: exit
       - run:
+          name: Exit hugo service
+          command: exit
+      - run:
           name: Button UI test
           command: cd/test/ && pwd && ./run.sh
