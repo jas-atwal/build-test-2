@@ -43,6 +43,8 @@ jobs:
       #    name: Change dir and run test
       #    command: cd test/ && pwd && sudo ./run.sh
   deploy:
+    docker:
+      - image: selenium/standalone-chrome:3.141.59-radium
     steps:
       - checkout
       - run:
