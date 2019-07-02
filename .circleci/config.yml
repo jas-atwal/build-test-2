@@ -42,3 +42,11 @@ jobs:
       #- run:
       #    name: Change dir and run test
       #    command: cd test/ && pwd && sudo ./run.sh
+  deploy:
+    steps:
+      - checkout
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            git push https://heroku:8d8c89b5-f381-4bfa-92da-9577c119a4ea@git.heroku.com/jas-circleci.git master
+
