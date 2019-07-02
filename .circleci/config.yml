@@ -47,7 +47,7 @@ jobs:
       #    command: cd test/ && pwd && sudo ./run.sh
   deploy:
     docker:
-      - image: selenium/standalone-chrome:3.141.59-radium
+      - image: gitlab/gitlab-runner:ubuntu-bleeding
     steps:
       - checkout
       - run:
